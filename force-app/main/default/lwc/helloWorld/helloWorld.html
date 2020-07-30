@@ -1,0 +1,12 @@
+<!--author rao, First example-->
+<template>
+        <lightning-card title="Welcome to LWC">
+            <div>Hello {greeting}</div>
+            <p>Employee Name:{name}</p>
+            <p>Employee Name:{age}</p>
+            <p>Employee Name:{salary}</p>
+        <lightning-input label="Enter Name" value={name} onchange={nameChangeHandler}></lightning-input>
+        <lightning-input type="number"  label="Enter Age" value={age} onchange={ageChangeHandler}></lightning-input>
+        <lightning-input label="Enter Salary" value={salary} onchange={salaryChangeHandler}></lightning-input>
+        </lightning-card>
+</template>
