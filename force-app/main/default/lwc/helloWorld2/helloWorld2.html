@@ -1,0 +1,13 @@
+<!--author rao-->
+<template>
+    <lightning-card title={mainHeader}  icon-name="action:add_contact">
+        <div class="slds-m-around_medium">
+        <p>Employee Name :{name}</p>
+        <p>Employee Age :{age}</p>
+        <p>Employee Salary :{salary}</p>
+        <lightning-input type="text" label="Name" onchange={nameChangeHandler}></lightning-input>
+        <lightning-input type="number" label="Age" onchange={ageChangeHandler}></lightning-input>
+        <lightning-input type="number" label="Salary" onchange={salaryChangeHandler}></lightning-input>
+        </div>
+    </lightning-card>
+</template>
