@@ -1,0 +1,21 @@
+<!--author rao-->
+<template>
+    <template if:true={show}>
+        <lightning-card title="Harianee Employee Information" icon-name="utility:advertising">
+            <div class="slds-m-around_medium">
+                <lightning-input label="Enter Name" onchange={nameChangeHandler} ></lightning-input>
+                <lightning-input type="number" label="Enter Age" onchange={ageChangeHandler} ></lightning-input>
+                <lightning-input type="number" label="Enter Salary" onchange={salaryChangeHandler}></lightning-input>
+    </br>
+            <lightning-button label="save" variant="brand" onclick={saveChangeHandler} ></lightning-button>
+            </div>
+        </lightning-card>
+    </template>
+    <template if:false={show}>
+        <div class="slds-m-around_medium">
+            <p> Employee name:{name}</p>
+            <p> Employee Age:{age}</p>
+            <p> Employee Salary:{salary}</p>
+        </div>
+    </template>
+</template>
