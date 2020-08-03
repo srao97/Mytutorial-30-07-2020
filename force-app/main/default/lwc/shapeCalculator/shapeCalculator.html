@@ -1,0 +1,38 @@
+<!--shape calculator component-->
+<template>
+    <lightning-card title="Shape Calculator" icon-name="action:new_account">
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input type="number" label="Enter side of the square" onchange={squareChangeHandler}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input type="number" label="Enter width of the rectangle" onchange={widthChangeHandler}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input type="number" label="Enter height of the rectangle" onchange={heightChangeHandler}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input type="number" label="Enter diagonal 1 for rhombus" onchange={diagonal1ChangeHandler}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-input type="number" label="Enter diagonal 2 for rhombus" onchange={diagonal2ChangeHandler}></lightning-input>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-button-group>
+                    <lightning-button label="Square" icon-position="right" onclick={squareHandler}></lightning-button>
+                    <lightning-button label="Rectangle" icon-position="center" variant="brand" onclick={rectangleHandler}></lightning-button>
+                    <lightning-button label="Rhombus" icon-position="left" onclick={RhombusHandler}></lightning-button>
+                </lightning-button-group>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12" padding="around-medium">
+                <lightning-formatted-text value={currentResult}></lightning-formatted-text>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>
